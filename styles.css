@@ -172,7 +172,7 @@ body {
   font-weight: bold;
   text-decoration: none;
   color: var(--primary);
-  padding: 60px 0px;
+  padding: 10px 0px;
 }
 
 .navbar-brand > a {
@@ -205,6 +205,10 @@ body {
   padding: 4px 8px;
   border-radius: 60px;
   font-weight: bold;
+}
+
+.nav-logo {
+ height: 7rem;
 }
 
 .events-container {
