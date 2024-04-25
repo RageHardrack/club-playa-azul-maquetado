@@ -202,8 +202,7 @@ body {
 .nav-active {
   background-color: var(--primary);
   color: white;
-  padding: 4px 8px;
-  border-radius: 60px;
+  padding: 8px;
   font-weight: bold;
 }
 

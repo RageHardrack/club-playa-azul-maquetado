@@ -1,0 +1,81 @@
+.main-pagos-container {
+  flex: 1 1 0%;
+  padding: 20px;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagos-container {
+    width: 400px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: var(--primary);
+}
+
+.pagos-form-group {
+  margin-bottom: 20px;
+}
+
+.pagos-form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.pagos-form-group input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.pagos-form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.pagos-btn {
+  background-color: #36305e;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  align-text: center;
+}
+
+.pagos-reference-card {
+  padding: 20px;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: var(--primary);
+}
+
+.pagos-reference-card-item {
+  margin-bottom: 20px;
+}
+
+.pagos-reference-card-item label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.pagos-reference-card-item span {
+  font-size: 16px;
+  color: #333;
+}
