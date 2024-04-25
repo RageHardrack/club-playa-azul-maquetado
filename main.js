@@ -8,5 +8,5 @@ form.addEventListener("submit", (event) => {
 
   
 
-  window.location = "/private.html";
+  window.location = "./private.html";
 });
