@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
-    <link rel="stylesheet" href="./pagos.css" />
-    <title>Ingresa tus pagos</title>
+    <link rel="stylesheet" href="./perfil.css" />
+    <title>Perfil</title>
   </head>
 
   <body>
     <header class="banner">
       <div></div>
-      
+
       <div class="banner-rrss">
         <a href="#" class="icon-button">
           <svg
@@ -101,81 +101,48 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link nav-active" href="./pagos.html"
-            >Registra tus pagos</a
-          >
+          <a class="nav-link" href="./pagos.html">Registra tus pagos</a>
         </li>
       </ul>
     </nav>
 
-    <main class="main-pagos-container">
-      <div class="pagos-container">
-        <h2>Registra tu Pago</h2>
+    <main class="perfil-main-container">
+      <header class="perfil-header">
+        <h2>Tu Información Personal</h2>
 
-        <form action="#">
-          <div class="pagos-form-group">
-            <label for="action-number">Número de Acción:</label>
-            <input
-              type="text"
-              id="action-number"
-              name="action-number"
-              required
-            />
-          </div>
+        <a class="perfil-anchor" href="./index.html"> Cerrar Sesión </a>
+      </header>
 
-          <div class="pagos-form-group">
-            <label for="payment-guide">Guía de Pago:</label>
-            <input
-              type="text"
-              id="payment-guide"
-              name="payment-guide"
-              required
-            />
-          </div>
-
-          <div class="pagos-form-group">
-            <label for="payment-method">Método de Pago:</label>
-            <select id="payment-method" name="payment-method" required>
-              <option value="">Selecciona el Método</option>
-              <option value="Credit Card">Zelle</option>
-              <option value="Credit Card">Binance</option>
-              <option value="Debit Card">Transferencia local</option>
-              <option value="Bank Transfer">Pago móvil</option>
-            </select>
-          </div>
-
-          <div class="pagos-form-group">
-            <label for="amount">Monto:</label>
-            <input type="text" id="amount" name="amount" required />
-          </div>
-
-          <button type="submit" class="pagos-btn">Registrar</button>
-        </form>
-      </div>
-
-      <div class="pagos-reference-card">
-        <h2>Métodos de Pago</h2>
-
-        <div class="pagos-reference-card-item">
-          <label for="account-number">Cuenta Bancaria:</label>
-          <span>1234567890</span>
+      <form action="#">
+        <div class="perfil-form-group">
+          <label for="nombres">Nombres:</label>
+          <input type="text" id="nombres" name="nombres" required />
         </div>
 
-        <div class="pagos-reference-card-item">
-          <label for="zelle-number">Zelle:</label>
-          <span>zelle@example.com</span>
+        <div class="perfil-form-group">
+          <label for="apellidos">Apellidos:</label>
+          <input type="text" id="apellidos" name="apellidos" required />
         </div>
 
-        <div class="pagos-reference-card-item">
-          <label for="binance-id">Binance ID:</label>
-          <span>binance1234</span>
+        <div class="perfil-form-group">
+          <label for="telefono">Teléfono:</label>
+          <input type="text" id="telefono" name="telefono" required />
         </div>
 
-        <div class="pagos-reference-card-item">
-          <label for="phone-number">Pago Móvil:</label>
-          <span>(123) 456-7890</span>
+        <div class="perfil-form-group">
+          <label for="cedula">Cédula de Identidad:</label>
+          <input type="text" id="cedula" name="cedula" required />
         </div>
-      </div>
+
+        <div class="perfil-form-group">
+          <label for="contrasena">Contraseña:</label>
+          <input type="password" id="contrasena" name="contrasena" required />
+        </div>
+
+        <div class="perfil-form-group">
+          <button type="submit" class="perfil-btn">Guardar</button>
+        </div>
+      </form>
     </main>
 
     <footer>
