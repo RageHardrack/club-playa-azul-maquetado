@@ -1,6 +1,7 @@
 :root {
   --primary: #36305e;
   --secondary: #5a527f;
+  --accent: #ff7a59;
   --dark: #333333;
 }
 
@@ -75,40 +76,85 @@ body {
   text-align: center;
 }
 
+/* #region Login */
+.login-main {
+  flex: 1 1 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  max-width: 400px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 250px;
+  height: auto;
+  margin: 0 auto 30px auto;
+}
+
 .form-group {
+  width: 100%;
   margin-bottom: 20px;
 }
 
 .form-group label {
   display: block;
+  color: var(--secondary);
   margin-bottom: 5px;
-  color: var(--primary);
 }
 
 .form-group input {
-  width: 100%;
+  width: calc(100% - 20px);
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  font-size: 16px;
 }
 
 .form-group input:focus {
   outline: none;
-  border-color: var(--primary);
+  border-color: var(--accent);
 }
 
-.form-group button {
-  background-color: var(--primary);
+.btn {
+  width: 100%;
+  background-color: var(--secondary);
   color: white;
   border: none;
   border-radius: 5px;
   padding: 10px;
-  width: 100%;
   cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
 }
 
-.form-group button:hover {
-  background-color: #5a527f;
+.btn:hover {
+  background-color: var(--accent);
+}
+
+.footer {
+  margin-top: 20px;
+  color: var(--secondary);
+  text-align: center;
+}
+
+.footer a {
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }
 
 .navbar {
